@@ -8,7 +8,7 @@
 - CRA 线不从 Safety Gate 警报推断案件、监管措施、罚款或合规结论；没有经批准的产品级输入时显示 `尚未核验`。
 - ENISA Single Reporting Platform 是报告入口，不是公开处罚库。
 
-详见：[合规审阅](docs/compliance-review.md)、[CRA 清单指南](docs/cra-review-manifest.md)、[数据运维](docs/data-operations.md)、[责任矩阵](docs/ownership.md)、[发布签核](docs/release-signoff.md)。
+详见：[合规审阅](docs/compliance-review.md)、[CRA 清单指南](docs/cra-review-manifest.md)、[数据运维](docs/data-operations.md)、[责任矩阵](docs/ownership.md)、[发布签核](docs/release-signoff.md)、[GitHub 接入 Runbook](docs/github-setup.md)。
 
 ## 本地运行
 

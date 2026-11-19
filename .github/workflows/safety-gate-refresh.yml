@@ -28,14 +28,8 @@ jobs:
       - name: Sync official Safety Gate data
         run: npm run data:sync -- --weeks=4 --limit=120
 
-      - name: Validate data boundary
-        run: npm run data:check
-
-      - name: Run tests
-        run: npm test
-
-      - name: Build from refreshed snapshot
-        run: npm run build
+      - name: Run release quality gate
+        run: npm run release:check
 
       - name: Upload refresh artifacts
         uses: actions/upload-artifact@v4
@@ -55,7 +49,7 @@ jobs:
           body: |
             Automated public Safety Gate snapshot refresh.
 
-            Checks run: `npm run data:check`, `npm test`, `npm run build`.
+            Checks run: `npm run release:check`.
             CRA product-level evidence is not inferred from this snapshot.
           branch: automation/safety-gate-refresh
           delete-branch: true

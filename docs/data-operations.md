@@ -32,7 +32,13 @@ npm run build:live
 
 同步器先写入带进程号的临时文件，只有抓取、解析、官方详情 URL / ID、日期、唯一性、措施和新鲜度校验全部成功后才原子替换快照。网络、XML 结构、字段或新鲜度失败时，旧快照保持不变。
 
-发布前必须依次通过：
+发布前可以直接运行统一质量门：
+
+```bash
+npm run release:check
+```
+
+它覆盖以下检查：
 
 1. `npm run data:check`
 2. `npm test`
