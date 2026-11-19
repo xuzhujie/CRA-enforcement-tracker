@@ -1,0 +1,31 @@
+{
+  "name": "cra-gpsr-product-dashboard",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "test": "tsx --test tests/*.test.ts",
+    "data:sync": "tsx scripts/sync-safety-gate.ts",
+    "data:check": "tsx scripts/validate-data.ts",
+    "build": "tsc -b && vite build",
+    "build:live": "npm run data:sync -- --weeks=4 --limit=120 && npm run data:check && npm run build",
+    "release:check": "npm run data:check && npm test && npm run lint && npm run build",
+    "lint": "tsc -b",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^5.1.1",
+    "lucide-react": "^0.562.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "typescript": "~5.9.3",
+    "vite": "^7.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.5",
+    "@types/react-dom": "^19.2.3",
+    "tsx": "^4.23.15"
+  }
+}
