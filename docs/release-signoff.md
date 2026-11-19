@@ -15,6 +15,7 @@
 - [x] 本地 Git `main` 基线已提交
 - [x] GitHub Actions workflow 已进入目标仓库
 - [x] GitHub 默认技术审阅已配置为 `@xuzhujie`
+- [x] 本地 `build:live` 已抓取 4 份官方周报，120 条警报通过校验且快照未产生漂移
 - [x] GitHub CI push run 已完成，`verify` job 与 `npm run release:check` 均成功
 - [ ] `Refresh Safety Gate snapshot` 已手动运行并确认 artifact / 刷新 PR
 
