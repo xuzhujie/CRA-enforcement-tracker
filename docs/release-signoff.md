@@ -1,6 +1,6 @@
 # 发布签核单
 
-状态：技术门已通过；本地 `main` 已推送到 `origin/main`。GitHub 已显示 workflow，但尚无运行记录；CLI 认证、责任人和业务 / 法务签核待补。
+状态：技术门已通过；本地 `main` 已推送到 `origin/main`。GitHub CI 已完成一次成功运行；Safety Gate 刷新 workflow 尚未完成一次人工触发的 artifact / PR 验收。责任人和业务 / 法务签核待补。
 
 ## 技术门
 
@@ -15,7 +15,8 @@
 - [x] 本地 Git `main` 基线已提交
 - [x] GitHub Actions workflow 已进入目标仓库
 - [x] GitHub 默认技术审阅已配置为 `@xuzhujie`
-- [ ] GitHub Actions 已手动运行并确认 artifact / 刷新 PR
+- [x] GitHub CI push run 已完成，`verify` job 与 `npm run release:check` 均成功
+- [ ] `Refresh Safety Gate snapshot` 已手动运行并确认 artifact / 刷新 PR
 
 ## 业务签核
 
@@ -29,4 +30,4 @@
 
 ## 发布决定
 
-在 GitHub remote、责任人和业务 / 法务签核补齐前，只允许作为内部研究看板使用。签核完成后，发布负责人应在 PR 中附上 `npm run release:check` 输出，并保留上一份快照的回滚路径。
+在责任人和业务 / 法务签核补齐前，只允许作为内部研究看板使用。签核完成后，发布负责人应在刷新 PR 中附上 `npm run release:check` 输出，并保留上一份快照的回滚路径。

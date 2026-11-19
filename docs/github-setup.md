@@ -1,6 +1,6 @@
 # GitHub 接入 Runbook
 
-当前状态：本地 `main` 已推送到 `origin/main`。GitHub 已显示 `Refresh Safety Gate snapshot` workflow，但尚无运行记录；GitHub CLI 的本地 token 已失效，手动触发和 Actions 运行验收需要仓库维护人重新认证。
+当前状态：本地 `main` 已推送到 `origin/main`。GitHub CI 已完成一次成功运行（包含 `npm run release:check`）；`Refresh Safety Gate snapshot` workflow 已进入仓库，但还需要维护人手动触发一次来验收 artifact / 刷新 PR。GitHub CLI 的本地 token 已失效，因此手动触发仍需维护人重新认证。
 
 ## 首次接入
 
@@ -30,4 +30,4 @@ git status --short --branch
 npm run release:check
 ```
 
-目标仓库已接入后，发布签核单保持“技术门已通过、Actions 已配置但尚无运行记录”，直到仓库维护人手动运行一次并确认 artifact / PR 流程。
+目标仓库已接入后，发布签核单记录为“技术门已通过、CI 已成功”；直到仓库维护人手动运行一次并确认 artifact / PR 流程，Safety Gate 刷新链路仍保持待验收。
