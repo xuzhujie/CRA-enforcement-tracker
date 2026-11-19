@@ -14,6 +14,7 @@
 - [x] Native 三模式、详情来源和键盘行选择已复核
 - [x] 本地 Git `main` 基线已提交
 - [x] GitHub Actions workflow 已进入目标仓库
+- [x] GitHub 默认技术审阅已配置为 `@xuzhujie`
 - [ ] GitHub Actions 已手动运行并确认 artifact / 刷新 PR
 
 ## 业务签核

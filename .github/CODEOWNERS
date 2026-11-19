@@ -1,0 +1,9 @@
+# Default technical and release owner confirmed from the repository owner.
+* @xuzhujie
+
+# Data, compliance-boundary, and workflow changes should remain visible to the
+# repository owner until dedicated domain teams are assigned.
+src/data/ @xuzhujie
+scripts/ @xuzhujie
+docs/ @xuzhujie
+.github/ @xuzhujie

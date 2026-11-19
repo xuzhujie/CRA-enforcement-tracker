@@ -10,6 +10,8 @@
 | CRA / 法务合规负责人 | 确认双轨边界、免责声明和外部发布范围 | 待指定 |
 | 发布负责人 | 执行 `npm run release:check`，合并刷新 PR，保留回滚能力 | xuzhujie（本地工作区维护人） |
 
+GitHub 默认技术审阅已通过 `.github/CODEOWNERS` 指向 `@xuzhujie`；产品安全和 CRA / 法务仍需要额外的领域审阅人。
+
 ## 最低审阅规则
 
 - Safety Gate 刷新 PR 至少由 Safety Gate 数据负责人和产品安全负责人审阅。
