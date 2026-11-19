@@ -1,6 +1,6 @@
 # 发布签核单
 
-状态：技术门已通过；外部仓库、责任人和业务 / 法务签核待补。
+状态：技术门已通过；本地 Git 基线为 `5dc2d42`。当前没有 GitHub remote，CLI 认证已失效，外部 Actions、责任人和业务 / 法务签核待补。
 
 ## 技术门
 
@@ -12,6 +12,7 @@
 - [x] `npm run lint`
 - [x] `npm run build`
 - [x] Native 三模式、详情来源和键盘行选择已复核
+- [x] 本地 Git `main` 基线已提交
 - [ ] GitHub Actions 在目标仓库中已启用
 
 ## 业务签核
