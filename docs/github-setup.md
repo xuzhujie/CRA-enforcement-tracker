@@ -1,6 +1,6 @@
 # GitHub 接入 Runbook
 
-当前状态：本地 `main` 已初始化，最新基线提交为 `81d51f9`；没有 `origin` remote。GitHub CLI 的本地 token 已失效，因此远端创建和首次推送必须由仓库维护人完成或在重新认证后执行。
+当前状态：本地 `main` 已推送到 `origin/main`，最新基线提交为 `8334bae`。GitHub 已显示 `Refresh Safety Gate snapshot` workflow，但尚无运行记录；GitHub CLI 的本地 token 已失效，手动触发和 Actions 运行验收需要仓库维护人重新认证。
 
 ## 首次接入
 
@@ -12,7 +12,7 @@ git remote add origin https://github.com/<owner>/CRA-enforcement-tracker.git
 git push -u origin main
 ```
 
-如果已存在同名仓库，应先确认它是本项目目标仓库，再使用对应 URL；不要把代码推送到不明 remote。
+如果已存在同名仓库，应先确认它是本项目目标仓库，再使用对应 URL；不要把代码推送到不明 remote。当前目标仓库是 `https://github.com/xuzhujie/CRA-enforcement-tracker`。
 
 ## Actions 与审阅规则
 
@@ -30,4 +30,4 @@ git status --short --branch
 npm run release:check
 ```
 
-目标仓库未接入前，发布签核单保持“技术门已通过、外部 Actions 待启用”。
+目标仓库已接入后，发布签核单保持“技术门已通过、Actions 已配置但尚无运行记录”，直到仓库维护人手动运行一次并确认 artifact / PR 流程。

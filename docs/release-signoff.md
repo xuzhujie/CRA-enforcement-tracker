@@ -1,6 +1,6 @@
 # 发布签核单
 
-状态：技术门已通过；本地 Git 最新基线为 `81d51f9`。当前没有 GitHub remote，CLI 认证已失效，外部 Actions、责任人和业务 / 法务签核待补。
+状态：技术门已通过；本地 Git 最新基线为 `8334bae`，已推送到 `origin/main`。GitHub 已显示 workflow，但尚无运行记录；CLI 认证、责任人和业务 / 法务签核待补。
 
 ## 技术门
 
@@ -13,7 +13,8 @@
 - [x] `npm run build`
 - [x] Native 三模式、详情来源和键盘行选择已复核
 - [x] 本地 Git `main` 基线已提交
-- [ ] GitHub Actions 在目标仓库中已启用
+- [x] GitHub Actions workflow 已进入目标仓库
+- [ ] GitHub Actions 已手动运行并确认 artifact / 刷新 PR
 
 ## 业务签核
 
