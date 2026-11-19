@@ -43,4 +43,6 @@ npm run release:check
 
 `.github/workflows/ci.yml` 在推送到 `main` 或创建 PR 时运行 `npm run release:check`，作为日常质量门。
 
+刷新入口：[Refresh Safety Gate snapshot workflow](https://github.com/xuzhujie/CRA-enforcement-tracker/actions/workflows/safety-gate-refresh.yml)。首次验收时请手动运行一次，并确认快照 / `dist/` artifact 和刷新 PR。
+
 推送到 GitHub 后，请在仓库 Actions 设置中确认工作流已启用，并为刷新 PR 指定数据负责人和产品安全审阅人。
