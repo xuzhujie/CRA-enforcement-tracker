@@ -1,6 +1,6 @@
 # GitHub 接入 Runbook
 
-当前状态：本地 `main` 已初始化，基线提交为 `a618c1b`；没有 `origin` remote。GitHub CLI 的本地 token 已失效，因此远端创建和首次推送必须由仓库维护人完成或在重新认证后执行。
+当前状态：本地 `main` 已初始化，最新基线提交为 `81d51f9`；没有 `origin` remote。GitHub CLI 的本地 token 已失效，因此远端创建和首次推送必须由仓库维护人完成或在重新认证后执行。
 
 ## 首次接入
 
