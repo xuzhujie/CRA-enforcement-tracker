@@ -1,6 +1,6 @@
 # GitHub 接入 Runbook
 
-当前状态：本地 `main` 已推送到 `origin/main`，代码基线为 `8334bae`，交接状态更新为 `6d234b6`。GitHub 已显示 `Refresh Safety Gate snapshot` workflow，但尚无运行记录；GitHub CLI 的本地 token 已失效，手动触发和 Actions 运行验收需要仓库维护人重新认证。
+当前状态：本地 `main` 已推送到 `origin/main`，代码基线为 `8334bae`，交接状态更新为 `547a09b`。GitHub 已显示 `Refresh Safety Gate snapshot` workflow，但尚无运行记录；GitHub CLI 的本地 token 已失效，手动触发和 Actions 运行验收需要仓库维护人重新认证。
 
 ## 首次接入
 
