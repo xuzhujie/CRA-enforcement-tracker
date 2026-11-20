@@ -1,6 +1,6 @@
 # 发布签核单
 
-状态：技术门已通过；本地 `main` 已推送到 `origin/main`。GitHub CI 已完成一次成功运行；Safety Gate 刷新 workflow 尚未完成一次人工触发的 artifact / PR 验收。责任人和业务 / 法务签核待补。
+状态：技术门已通过；本地 `main` 已推送到 `origin/main`。GitHub CI 与 Safety Gate 刷新 workflow 均已成功验收；[刷新 PR #1](https://github.com/xuzhujie/CRA-enforcement-tracker/pull/1) 当前等待审阅。责任人和业务 / 法务签核待补。
 
 ## 技术门
 
@@ -17,7 +17,8 @@
 - [x] GitHub 默认技术审阅已配置为 `@xuzhujie`
 - [x] 本地 `build:live` 已抓取 4 份官方周报，120 条警报通过校验且快照未产生漂移
 - [x] GitHub CI push run 已完成，`verify` job 与 `npm run release:check` 均成功
-- [ ] `Refresh Safety Gate snapshot` 已手动运行并确认 artifact / 刷新 PR
+- [x] `Refresh Safety Gate snapshot` 已手动运行并确认 artifact / [刷新 PR #1](https://github.com/xuzhujie/CRA-enforcement-tracker/pull/1)
+- [x] 刷新 PR 上的 CI workflow 已批准并成功完成
 
 ## 业务签核
 

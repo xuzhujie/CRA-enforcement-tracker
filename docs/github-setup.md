@@ -1,6 +1,6 @@
 # GitHub 接入 Runbook
 
-当前状态：本地 `main` 已推送到 `origin/main`。GitHub CI 已完成一次成功运行（包含 `npm run release:check`）；`Refresh Safety Gate snapshot` workflow 已进入仓库，但还需要维护人手动触发一次来验收 artifact / 刷新 PR。GitHub CLI 的本地 token 已失效，因此手动触发仍需维护人重新认证。
+当前状态：本地 `main` 已推送到 `origin/main`。GitHub CI 已完成成功运行（包含 `npm run release:check`）；`Refresh Safety Gate snapshot` 已手动运行成功，artifact 和[刷新 PR #1](https://github.com/xuzhujie/CRA-enforcement-tracker/pull/1) 已验收，PR 分支 CI 也已成功。GitHub CLI 的本地 token 仍失效，但浏览器维护人登录态已足够完成手动运行。
 
 ## 首次接入
 
@@ -30,4 +30,4 @@ git status --short --branch
 npm run release:check
 ```
 
-目标仓库已接入后，发布签核单记录为“技术门已通过、CI 已成功”；直到仓库维护人手动运行一次并确认 artifact / PR 流程，Safety Gate 刷新链路仍保持待验收。
+目标仓库已接入后，发布签核单记录为“技术门已通过、CI 与刷新链路已成功”；Safety Gate 刷新 PR 仍必须经过数据 / 产品安全审阅后才能合并。
