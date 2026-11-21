@@ -1,6 +1,6 @@
 # GitHub 接入 Runbook
 
-当前状态：本地 `main` 已推送到 `origin/main`。GitHub CI 已完成成功运行（包含 `npm run release:check`）；`Refresh Safety Gate snapshot` 已手动运行成功，artifact 和[刷新 PR #1](https://github.com/xuzhujie/CRA-enforcement-tracker/pull/1) 已验收，PR 分支 CI 也已成功。GitHub CLI 的本地 token 仍失效，但浏览器维护人登录态已足够完成手动运行。
+当前状态：本地 `main` 已同步到 `origin/main`。GitHub CI 已完成成功运行（包含 `npm run release:check`）；`Refresh Safety Gate snapshot` 已手动运行成功，artifact 已验收，[刷新 PR #1](https://github.com/xuzhujie/CRA-enforcement-tracker/pull/1) 已在 PR CI 通过后以 squash 方式合并，合并后的 `main` CI 也已成功。GitHub CLI 的本地 token 仍失效，但浏览器维护人登录态已足够完成手动运行和合并。
 
 ## 首次接入
 
@@ -30,4 +30,4 @@ git status --short --branch
 npm run release:check
 ```
 
-目标仓库已接入后，发布签核单记录为“技术门已通过、CI 与刷新链路已成功”；Safety Gate 刷新 PR 仍必须经过数据 / 产品安全审阅后才能合并。
+目标仓库已接入后，发布签核单记录为“技术门已通过、CI 与刷新链路已成功”；后续 Safety Gate 刷新 PR 仍必须经过数据 / 产品安全审阅后才能合并。

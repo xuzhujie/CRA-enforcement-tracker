@@ -1,6 +1,6 @@
 # 发布签核单
 
-状态：技术门已通过；本地 `main` 已推送到 `origin/main`。GitHub CI 与 Safety Gate 刷新 workflow 均已成功验收；[刷新 PR #1](https://github.com/xuzhujie/CRA-enforcement-tracker/pull/1) 当前等待审阅。责任人和业务 / 法务签核待补。
+状态：技术门已通过；本地 `main` 已同步到 `origin/main`。Safety Gate 刷新 workflow、PR 检查和合并后的 `main` CI 均已成功验收；[刷新 PR #1](https://github.com/xuzhujie/CRA-enforcement-tracker/pull/1) 已于 2026-11-21 以 squash 方式合并，合并提交为 `3ec78bd`。责任人和业务 / 法务签核待补。
 
 ## 技术门
 
@@ -19,6 +19,7 @@
 - [x] GitHub CI push run 已完成，`verify` job 与 `npm run release:check` 均成功
 - [x] `Refresh Safety Gate snapshot` 已手动运行并确认 artifact / [刷新 PR #1](https://github.com/xuzhujie/CRA-enforcement-tracker/pull/1)
 - [x] 刷新 PR 上的 CI workflow 已批准并成功完成
+- [x] 刷新 PR #1 已在检查通过、无冲突后以 squash 方式合并；合并后的 `main` CI 也已成功完成
 
 ## 业务签核
 
